@@ -88,15 +88,6 @@ function draw() {
 	}	
 }
 
-function mouseDragged() {
-	UI.mouseDragged();
-}
-
-function mousePressed() {
-	UI.mouseClicked();
-	if(player != null) player.jump();
-}
-
 function keyPressed() {
 	if(keyCode == 32 || keyCode == 18){ // Spacebar / Enter
 		if(player != null) player.jump();
