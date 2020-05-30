@@ -1,4 +1,4 @@
-let mouseReleased = true;
+let mouseUp = true;
 let factors = [1, 1.15, 1.3];
 let intro = 0, introLen = 90;
 
@@ -43,12 +43,12 @@ function startMenu() {
     // Input
     if(mouseIsPressed && intro >= introLen) {
         if(mouseX < width/2) startGame(factors[difficulty]);
-        else if(mouseReleased) {
+        else if(mouseUp) {
             difficulty = (difficulty + 1) % 3;
-            mouseReleased = false;
+            mouseUp = false;
         }
     } else {
-        mouseReleased = true;
+        mouseUp = true;
     }
 }
 
