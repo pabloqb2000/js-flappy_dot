@@ -7,7 +7,7 @@ let pipeSpace, pipeVel, pipeWidth, pipeSpawnRate;
 let colors;
 
 function setup() {
-	textFont("Sarpanch");
+	textFont("Orbitron");
 	createCanvas(windowWidth, windowHeight);
 	background(32);
 
