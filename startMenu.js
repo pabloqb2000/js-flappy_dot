@@ -9,6 +9,7 @@ function startMenu() {
     textAlign(CENTER);
     textStyle(BOLD);
     text("Flappy dot", 0, -height/2 + 65);
+    textStyle(NORMAL);
     // Draw player
     ellipse(0, -height/2 + 120, 60, 60);
     fill(32);
